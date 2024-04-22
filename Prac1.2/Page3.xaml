@@ -1,0 +1,24 @@
+﻿<Page x:Class="Prac1._2.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Prac1._2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ThirdPage">
+
+    <Grid>
+        <DataGrid x:Name="UsersDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button x:Name="Page3Add" Content="Добавить строчку" HorizontalAlignment="Left" Margin="400,150,0,0" VerticalAlignment="Top" Width="400" Click="Page3Add_Click" Height="50"/>
+        <TextBox x:Name="UserIDTextBox" HorizontalAlignment="Left" Margin="0,150,0,0" TextWrapping="Wrap" Text="UserID" VerticalAlignment="Top" Width="50" Height="50"/>
+        <TextBox x:Name="UserNameTextBox" HorizontalAlignment="Left" Margin="55,150,0,0" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Top" Width="50" Height="50"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Margin="110,150,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="50" Height="50"/>
+
+        <Button x:Name="Page3Delete" Content="Удалить строчку" HorizontalAlignment="Left" Margin="400,205,0,0" VerticalAlignment="Top" Width="400" Click="Page3Delete_Click" Height="50"/>
+        <Button x:Name="Page3Update" Content="Изменить строчку" HorizontalAlignment="Left" Margin="400,260,0,0" VerticalAlignment="Top" Width="400" Click="Page3Update_Click" Height="50"/>
+        <TextBox x:Name="UserNameUpdateTextBox" HorizontalAlignment="Left" Margin="0,260,0,0" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Top" Width="60" Height="50"/>
+        <TextBox x:Name="EmailUpdateTextBox" HorizontalAlignment="Left" Margin="65,260,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="60" Height="50"/>
+
+    </Grid>
+</Page>
